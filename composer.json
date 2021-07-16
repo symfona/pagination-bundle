@@ -1,9 +1,9 @@
 {
-  "name": "symfona/demo-bundle",
+  "name": "symfona/pagination-bundle",
   "type": "symfony-bundle",
   "description": "Symfony Bundle Template",
-  "keywords": ["php", "symfony", "bundle", "demo", "template"],
-  "homepage": "https://github.com/symfona/demo-bundle",
+  "keywords": ["php", "symfony", "pagination", "doctrine", "odm"],
+  "homepage": "https://github.com/symfona/pagination-bundle",
   "license": "MIT",
   "authors": [
     {
@@ -23,12 +23,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Symfona\\DemoBundle\\": "src"
+      "Symfona\\PaginationBundle\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Symfona\\DemoBundle\\Tests\\": "tests"
+      "Symfona\\PaginationBundle\\Tests\\": "tests"
     }
   },
   "config": {

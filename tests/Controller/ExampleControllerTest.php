@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Symfona\DemoBundle\Tests\Controller;
+namespace Symfona\PaginationBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpFoundation\Request;

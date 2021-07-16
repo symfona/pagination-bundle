@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Symfona\DemoBundle\Tests\App\Controller;
+namespace Symfona\PaginationBundle\Tests\App\Controller;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

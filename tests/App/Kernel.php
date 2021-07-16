@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Symfona\DemoBundle\Tests\App;
+namespace Symfona\PaginationBundle\Tests\App;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
@@ -13,7 +13,7 @@ final class Kernel extends \Symfony\Component\HttpKernel\Kernel
     public function registerBundles(): iterable
     {
         yield new \Symfony\Bundle\FrameworkBundle\FrameworkBundle();
-        yield new \Symfona\DemoBundle\DemoBundle();
+        yield new \Symfona\PaginationBundle\PaginationBundle();
     }
 
     protected function configureContainer(ContainerConfigurator $container): void
