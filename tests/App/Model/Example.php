@@ -8,7 +8,7 @@ use Symfona\Pagination\Query;
 use Symfona\Pagination\Result;
 use Symfona\PaginationBundle\DependencyInjection\PaginatorTrait;
 
-final class ExampleModel
+final class Example
 {
     use PaginatorTrait;
 
@@ -17,10 +17,8 @@ final class ExampleModel
         $factory->add(\ArrayObject::class, ArrayObjectAdapter::class);
     }
 
-    public function getView(Query $query): Result
+    public function getResult(Query $query, object $storage): Result
     {
-        $storage = new \ArrayObject([1, 2, 3, 4, 5]);
-
         return $this->paginator->paginate($storage, $query);
     }
 }

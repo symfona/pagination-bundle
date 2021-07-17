@@ -23,6 +23,5 @@ final class Kernel extends \Symfony\Component\HttpKernel\Kernel
 
     protected function configureRoutes(RoutingConfigurator $routes): void
     {
-        $routes->import('config/routes.yaml');
     }
 }

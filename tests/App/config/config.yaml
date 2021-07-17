@@ -3,9 +3,6 @@ framework:
     secret: test
 
 services:
-    Symfona\PaginationBundle\Tests\App\Controller\:
-        resource: '../Controller'
-        tags: ['controller.service_arguments']
-
-    Symfona\PaginationBundle\Tests\App\Model\ExampleModel:
+    Symfona\PaginationBundle\Tests\App\Model\Example:
+        public: true
         autowire: true
