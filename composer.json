@@ -1,8 +1,8 @@
 {
   "name": "symfona/pagination-bundle",
   "type": "symfony-bundle",
-  "description": "Symfony Bundle Template",
-  "keywords": ["php", "symfony", "pagination", "doctrine", "odm"],
+  "description": "Pagination Bundle",
+  "keywords": ["php", "symfony", "pagination"],
   "homepage": "https://github.com/symfona/pagination-bundle",
   "license": "MIT",
   "authors": [
@@ -13,6 +13,7 @@
   ],
   "require": {
     "php": "^8.0",
+    "symfona/pagination": "^1.0.1",
     "symfony/framework-bundle": "^5.3"
   },
   "require-dev": {

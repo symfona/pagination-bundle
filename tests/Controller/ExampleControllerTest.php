@@ -10,19 +10,17 @@ final class ExampleControllerTest extends WebTestCase
 {
     public function testExample(): void
     {
-        $body = \json_encode(['foo' => 'baz']) ?: '';
+        $response = $this->sendRequest();
 
-        $response = $this->sendRequest($body);
-
-        $this->assertSame($body, $response->getContent());
+        $this->assertSame('{"count":5,"items":[3,4]}', $response->getContent());
         $this->assertSame(Response::HTTP_OK, $response->getStatusCode());
     }
 
-    private function sendRequest(string $body): Response
+    private function sendRequest(): Response
     {
         $client = self::createClient();
 
-        $client->request(Request::METHOD_POST, '/', [], [], ['CONTENT_TYPE' => 'application/json'], $body);
+        $client->request(Request::METHOD_GET, '/');
 
         return $client->getResponse();
     }
