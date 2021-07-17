@@ -6,3 +6,6 @@ services:
     Symfona\PaginationBundle\Tests\App\Controller\:
         resource: '../Controller'
         tags: ['controller.service_arguments']
+
+    Symfona\PaginationBundle\Tests\App\Model\ExampleModel:
+        autowire: true
