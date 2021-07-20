@@ -5,7 +5,7 @@ namespace Symfona\PaginationBundle\DependencyInjection;
 use Symfona\Pagination\Paginator;
 use Symfony\Contracts\Service\Attribute\Required;
 
-trait PaginatorTrait
+trait PaginatorAwareTrait
 {
     private Paginator $paginator;
 

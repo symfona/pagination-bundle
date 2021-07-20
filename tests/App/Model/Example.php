@@ -6,11 +6,11 @@ use Symfona\Pagination\Adapter\FactoryInterface;
 use Symfona\Pagination\Adapter\InMemory\ArrayObjectAdapter;
 use Symfona\Pagination\Query;
 use Symfona\Pagination\Result;
-use Symfona\PaginationBundle\DependencyInjection\PaginatorTrait;
+use Symfona\PaginationBundle\DependencyInjection\PaginatorAwareTrait;
 
 final class Example
 {
-    use PaginatorTrait;
+    use PaginatorAwareTrait;
 
     public function __construct(FactoryInterface $factory)
     {
